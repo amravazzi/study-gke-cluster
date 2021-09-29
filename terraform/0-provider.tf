@@ -13,11 +13,11 @@ resource "random_integer" "int" {
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "~> 3.66"
     }
     random = {
-      source = "hashicorp/random"
+      source  = "hashicorp/random"
       version = "~> 3.1"
     }
   }

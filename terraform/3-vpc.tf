@@ -30,7 +30,7 @@ resource "google_compute_network" "private" {
     for_each = local.secondary_ip_ranges
 
     content {
-      range_name = secondary_ip_range.key
+      range_name    = secondary_ip_range.key
       ip_cidr_range = secondary_ip_range.value
     }
   }
